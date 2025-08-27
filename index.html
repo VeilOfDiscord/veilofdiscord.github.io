@@ -20,22 +20,74 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header_text">
+                <p>Useful Bum</p>
+                <h1> Hey, I'm <span>Avril</span><br> from video games</h1>
+            </div>
+
         </div>
     </div>
-    <div id="body">
-        <h1>Nathaell Avril Leman</h1>
-        <h3> About Me</h3>
-            <p>Experience: NONE! :c</p>
-            <p>Education: Computer Science @ University of Central Florida </p>
-        <h3> Projects so far...</h3>
-            <p> Audibelle VR game</p>
-            <p> this website!</p>
-            <p> GPX Distance grapher</P>
-        <h3>Contact</h3>
-            <P> Phone number: +62 813-1127-5803</p>
-            <p> email: avrilnathaell@gmail.com</p>
-            <p> discord: veil28</p>
-    </div>
-</body>
 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/logo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">Nathaell Avril Leman</h1>
+                    <p> Lorem Ipsum </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('projects')">Projects</p>
+                        <p class="tab-links" onclick="openTab('contact')">Contact</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>WASDASD</li>
+                            <li><span>Web development</span><br>WASDASD</li>
+                            <li><span>Virtual Reality development</span><br>WASDASD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="projects">
+                        <ul>
+                            <li><span>audibELLE</span><br>Language learning VR game</li>
+                            <li><span>GPX distance grapher</span><br>Visualizes route on a map and calculates true distance travelled</li>
+                            <li><span>This website!</span><br>small little portfolio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="contact">
+                        <ul>
+                            <li><span>Phone Number</span><br>US: +1 (xxx)-xxx xxxx</li>
+                            <li><span>Email</span><br>xx@gmail.com</li>
+                            <li><span>Discord</span><br>xx</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+       
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function openTab(tabName){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+</body>
 </html>
