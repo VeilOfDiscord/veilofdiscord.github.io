@@ -4,93 +4,131 @@
 <!-- https://www.youtube.com/watch?v=0YFrGy_mzjY -->
 <head>
     <meta charset="UTF-8">
-    <title> Nathaell Avril Leman - Personal Portfolio</title>
+    <title> Lebaek.ID - Home</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
-    <div id="header">
+    <div id="header-home">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <a href="/index.html"><img src="images/logo.png" class="logo"></a>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Personal Site</a></li>
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="#">Shop</a></li>
                 </ul>
             </nav>
             <div class="header_text">
-                <p>Useful Bum</p>
-                <h1> Hey, I'm <span>Avril</span><br> from video games</h1>
+                <h1>LeBaek.id</h1>
             </div>
         </div>
     </div>
 
+    <div id="services">
+        <div class="container">
+            <!-- <h1 class="subtitle">Services</h1> -->
+            <div class="services-list">
+                <div>
+                    <h2>Events</h2>
+                    <p>Berani Nanjak and Ultra Races</p>
+                </div>
+                <div>
+                    <h2>Services</h2>
+                    <p>Tours, support package, etc.</p>
+                </div>
+                <div>
+                    <h2>Shop</h2>
+                    <p>Tokopedia</p>
+                </div>
+                <div>
+                    <h2>YouTube</h2>
+                    <p>Sesuka Ale</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="about">
         <div class="container">
+            <h1 class="subtitle">About</h1>
             <div class="row">
                 <div class="about-col-1">
                     <img src="images/logo.png">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">Nathaell Avril Leman</h1>
-                    <p> Lorem Ipsum </p>
+                    <ul>
+                        <li>
+                            LeBaek.ID wants to give cycling enthusiasts the opportunity to enjoy 
+                            an exciting touring experience that is safe and comfortable while 
+                            exploring Indonesia with interesting and challenging routes.  
+                        </li>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('projects')">Projects</p>
-                        <p class="tab-links" onclick="openTab('contact')">Contact</p>
+                        <li>
+                            Ale (Andre Leman) is a retired office worker with a hobby for 
+                            cycling long distances and competing in several national and 
+                            even international cycling events. He has also managed internal 
+                            club events as well as public events.
+                        </li>
+                        <li>
+                            To see more about Ale (Andre Leman), he also has a YouTube channel 
+                            called "Sesuka Ale" with videos covering many events and talking to 
+                            other competitors.
+                        </li>      
+                        <li>
+                            <i>
+                            LeBaek.ID ingin memberi kesempatan kepada sesama pecinta sepeda 
+                            menikmati pengalaman touring seru yang aman dan nyaman dalam 
+                            menjelajah Indonesia dengan rute-rute menarik 
+                            dan menantang.
+                            <br>
+
+                            </i>
+                            <li>
+                                <i>
+                                    Ale (Andre Leman), pensiunan karyawan swasta dengan hobi bersepeda jarak
+                                    jauh dan juga mengikuti beberapa event nasional maupun
+                                    international. Ia juga berpengalaman dalam
+                                    penyelenggaraan event internal club maupun event umum nasional.
+                                </i>
+                            </li>
+                            <li>
+                                <i>
+                                    Ale (Andre Leman) juga dikenal sebagai seorang Youtuber.
+                                    account Youtube ale : "sesuka ale"
+                                </i>
+                            </li>
+                        </li>    
+                    </ul>                  
+                            <!-- <ul>                      
+                                <li><span>YUCC 2021</span><br>1000km</li>
+                                <li><span>Bentang Jawa 2021</span><br>1500km</li>
+                                <li><span>Bentang Jawa 2023</span><br>1500km</li>
+                                <li><span>Bentang Jawa 2024</span><br>1500km</li>
+                                <li><span>London-Edinburgh-London 2022</span><br>1500km</li>
+                                <li><span>Lintang Flores2024</span><br> 1000km</li>
+                            </ul> -->
+                    <!-- <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('company')">LEBAEK.ID</p>
+                        <p class="tab-links" onclick="openTab('founder')">ALE</p>
+                        <p class="tab-links" onclick="openTab('races')">ULTRA</p>
                     </div>
-                    <div class="tab-content active-tab" id="skills">
+                    <div class="tab-content active-tab" id="company">
                         <ul>
-                            <li><span>UI/UX</span><br>WASDASD</li>
-                            <li><span>Web development</span><br>WASDASD</li>
-                            <li><span>Virtual Reality development</span><br>WASDASD</li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="projects">
+                    <div class="tab-content" id="founder">
                         <ul>
-                            <li><span>audibELLE</span><br>Language learning VR game</li>
-                            <li><span>GPX distance grapher</span><br>Visualizes route on a map and calculates true distance travelled</li>
-                            <li><span>This website!</span><br>small little portfolio</li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="contact">
-                        <ul>
-                            <li><span>Phone Number</span><br>US: +1 (xxx)-xxx xxxx</li>
-                            <li><span>Email</span><br>xx@gmail.com</li>
-                            <li><span>Discord</span><br>xx</li>
+                    <div class="tab-content" id="races">
 
-                        </ul>
-                    </div>
-
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="subtitle">Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2>Web Design</h2>
-                    <p> Enter text here</p>
-                </div>
-                <div>
-                    <h2>Game Scripting</h2>
-                    <p>Enter text here</p>
-                </div>
-                <div>
-                    <h2>UI/UX Design</h2>
-                    <p>Enter text here</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio">
+    <!-- <div id="portfolio">
         <div class="container">
             <h1 class="subtitle">My Work</h1>
             <div class="work-list">
@@ -121,7 +159,7 @@
             </div>
             <a href="#" class="btn">See more</a>
         </div>
-    </div>
+    </div> -->
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-content");
@@ -141,4 +179,12 @@
 </script>
 
 </body>
+<footer>
+    <div id="footer">
+        <div class="container">
+            <h1>LeBaek.id</h1>
+            <p></p>
+        </div>
+    </div>
+</footer>
 </html>
